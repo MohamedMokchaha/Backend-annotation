@@ -8,6 +8,6 @@ router.register(r'annotations', AnnotationViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('documents/export/<int:document_id>/', export_annotations, name='export_annotations'),
+    path('documents/export/<int:document_id>/', export_annotations, name='export_annotations'), # dd
 ]
 
